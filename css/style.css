@@ -1,0 +1,287 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: #e98074;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAE7DC;
+}
+
+/*--MAIN--*/
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 40px;
+}
+
+nav{
+    background: #fff;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float:right;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #e98074;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    color: #ffb84d;
+    transition: .2s;
+}
+
+.name:hover{
+    color: #ffb84d;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #ffb84d;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*--MAIN--*/
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text{
+    font-size: 44px;
+    font-weight: 500;
+    text-align: right;
+    color: #808080;
+}
+.intro-text2{
+    font-size: 44px;
+    font-weight: 500;
+    text-align: left;
+    color: #808080;
+}
+
+.active-main{
+    font-size: 44px;
+    font-weight: 500;
+    color: #e98074;
+}
+
+.intro-text h1{
+    color: #e98074;
+    text-decoration: overline;
+    cursor: pointer;
+}
+
+.cover{
+    margin-top: 15vh;
+    margin-left: 50vh;
+}
+
+.cover img{
+    border-radius: 20%;
+    width: 70%;
+    filter: drop-shadow(0px 5px 3px black);
+}
+
+/*--About me--*/
+
+#about{
+    padding: 40vh;
+    font-size: 44px;
+    font-weight: 500;
+    color: #808080;
+}
+
+#about2{
+    margin-right: 20vh;
+    font-size: 44px;
+    font-weight: 500;
+    float: right;
+    color: #808080;
+}
+
+/*--FUTURE WORKS--*/
+
+#future-works{
+    align-content: center;
+    margin-top: 50vh;
+    font-size: 60px;
+    font-weight: 500;
+    float: right;
+    color: #e98074;
+}
+
+/*--CONTACT ME--*/
+#big-contact{
+    margin-top: 80vh;
+    margin-right: 5vh;
+    font-size: 30px;
+    font-weight: 500;
+    float: right;
+    color: #808080
+}
+
+.gotopbtn{
+    font-size: 50px;
+    position: fixed;
+    width: 40px;
+    height: 68px;
+    color: #e98074; 
+    bottom: 0px;
+    right: 50px;
+}
+
+@media screen and (max-width: 375px){
+    
+    /*--BAR--*/
+    .checkbtn{
+        display: block;
+        float: right;
+        padding:
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background: #EAE7DC;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        color: #fff
+    }
+    a:hover, a.active{
+        background: #ffb84d;
+        color: #fff;
+        transition: .2s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    /*--MAIN--*/
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .cover{
+        margin-top: 15vh;
+        margin-left: 10vh;
+        z-index: -1;
+    }
+    .cover img{
+        border-radius: 40%;
+        width: 80%;
+        filter: drop-shadow(0px 5px 3px #8E8D8A);
+    }
+    
+    .intro-text h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .intro-text p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .intro-text2 p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .active-main{
+        margin-top: 5vh;
+        font-size: 18px;
+    }
+    
+    /*--ABOUT--*/
+    #about{
+        padding: 0;
+        margin-top: 20vh;
+        margin-right: 5vh;
+        font-size: 20px;
+        text-align: right;
+    }    
+    #about2{
+        margin-top: 20vh;
+        font-size: 20px;
+        padding: 20px;
+        text-align: left;
+        
+    }
+    /*--WORKS--*/
+    #future-works{
+        font-size: 30px;
+        margin-right: 7vh;
+        text-align: center;
+    }
+    /*--CONTACT--*/
+    #big-contact{
+        font-size: 16px;
+        text-align: center;
+    }
+    .gotopbtn{
+    font-size: 30px;
+    position: fixed;
+    width: 0px;
+    height: 40px;
+    color: #e98074; 
+    bottom: 0px;
+    right: 50px;
+    }
+}
